@@ -1,6 +1,7 @@
 import React, { useRef } from 'react'
 
 const NewShoeForm = () => {
+    const modelInputRef = useRef()
 
     const handleSubmit = (event) => {
         event.preventDefault()
@@ -14,7 +15,7 @@ const NewShoeForm = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type="text" placeholder='Schuhmodell' name='model'/>
+            <input ref={modelInputRef} type="text" placeholder='Schuhmodell' name='model'/>
             <button>Abschicken</button>
         </form>
     )

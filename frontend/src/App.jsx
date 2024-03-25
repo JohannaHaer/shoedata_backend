@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import './App.css'
 import NewShoeForm from './component/NewShoeForm'
+import ShoeList from './component/ShoeList'
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
   return (
     <>
       <NewShoeForm/>
+      <ShoeList/>
     </>
   )
 }
